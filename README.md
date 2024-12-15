@@ -1,4 +1,4 @@
-# RefHCM: A Unified Model for Human-Centric Perceptions
+# RefHCM: A Unified Model for Referring Perceptions in Human-Centric Scenarios
 
 ## Overview
 
@@ -116,7 +116,7 @@ If you find this repository useful, please consider citing it:
 ```
 @misc{refhcm2024,
   author = {Jie Huang},
-  title = {{RefHCM: A Unified Model for Human-Centric Perceptions}},
+  title = {{RefHCM: A Unified Model for Referring Perceptions in Human-Centric Scenarios}},
   year = {2024},
   publisher = {GitHub},
   journal = {GitHub repository},
