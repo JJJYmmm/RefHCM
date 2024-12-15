@@ -45,11 +45,11 @@ For environment setup issues, e.g. `fairseq` installation, refer to the manual s
 
 - Now you can try RefHCM:smile:, here are some examples.
 
-  <img src="C:\Users\Axuanz\Desktop\refhcm\examples\rec.png" alt="rec" style="zoom:20%;" /><img src="C:\Users\Axuanz\Desktop\refhcm\examples\rkpt.png" alt="rkpt" style="zoom: 20%;" />
+  <img src="examples\rhrc.png" alt="rhrc" style="zoom:20%;" />
 
-  <img src="C:\Users\Axuanz\Desktop\refhcm\examples\rpar.png" alt="rpar" style="zoom:33%;" />
+  <img src="examples\rkpt.png" alt="rkpt" style="zoom: 20%;" />
 
-  <img src="C:\Users\Axuanz\Desktop\refhcm\examples\rhrc.png" alt="rhrc" style="zoom:20%;" />
+  <img src="examples\rpar.png" alt="rpar" style="zoom:33%;" />
 
 ## Data Preparation and Pretrained Model
 
@@ -79,7 +79,7 @@ bash evaluate_rkpt.sh # evaluate
 
 ### Referring Parsing (RPar)
 
-`full_mask` means Query Parallel Generation (QPG) mentioned in the paper, which can speed up the generation speed while remains the performance.
+`full_mask` means Query Parallel Generation (QPG) mentioned in the paper, which can speed up the generation speed while retains most of the performance.
 
 ```bash
 cd run_script/rpar/
@@ -103,7 +103,7 @@ bash evaluate_rhrc.sh # evaluate
 ```bash
 cd run_script/multitask/
 bash train_multitask.sh # training, including multitask learning \
-						# and reasoning ablity boosting (RefHCM-tuned)
+		        # and reasoning ablity boosting (RefHCM-tuned)
 ```
 
 ## Acknowledgments
@@ -117,7 +117,7 @@ If you find this repository useful, please consider citing it:
 
 ```
 @misc{refhcm2024,
-  author = {Jie Huang},
+  author = {JJJYmmm},
   title = {{RefHCM: A Unified Model for Referring Perceptions in Human-Centric Scenarios}},
   year = {2024},
   publisher = {GitHub},
