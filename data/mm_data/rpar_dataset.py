@@ -30,7 +30,7 @@ warnings.filterwarnings("ignore", "(Possibly )?corrupt EXIF data", UserWarning)
 IMAGENET_DEFAULT_MEAN = (0.485, 0.456, 0.406)
 IMAGENET_DEFAULT_STD = (0.229, 0.224, 0.225)
 
-root_anno_path = '../../dataset/rpar/anno' # your anno path
+root_anno_path = '../../dataset/rpar/annos' # your anno path
 
 
 def collate(samples, pad_idx, eos_idx):
