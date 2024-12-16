@@ -128,9 +128,9 @@ class RHrcDataset(OFADataset):
         self.pattern = r'\s*\[\d+(?:, \d+)*\]\s*'
 
     def __getitem__(self, index):
-        uniq_id, image_path, region_coord, caption = self.dataset[index]
+        uniq_id, base64_str, region_coord, caption = self.dataset[index]
 
-        image = Image.open(image_path).convert("RGB")
+        image = Image.open(BytesIO(base64.urlsafe_b64decode(base64_str))).convert("RGB")
         w, h = image.size
 
         x0, y0, x1, y1 = region_coord.strip().split(',')
