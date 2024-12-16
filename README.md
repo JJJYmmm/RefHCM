@@ -35,7 +35,7 @@ For environment setup issues, e.g. `fairseq` installation, refer to the manual s
 
 ## Quick Start
 
-- Download the model weight [here](xxx), and put it in folder `/checkpoints`
+- Download the model weight refhcm.pt from [here](https://github.com/JJJYmmm/RefHCM/tree/main/checkpoints), and put it in folder `/checkpoints`
 
 - Launch the gradio demo
 
