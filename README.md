@@ -1,4 +1,4 @@
-# RefHCM: A Unified Model for Human-Centric Perceptions
+# RefHCM: A Unified Model for Referring Perceptions in Human-Centric Scenarios
 
 ## Overview
 
@@ -8,7 +8,9 @@ Here is the official implementation of **RefHCM**, a unified model designed spec
 
 ## Capabilities of RefHCM
 
-RefHCM paves the way for advanced referring abilities in human-AI interactions. For current applications, it can simplify the AIGC content generation pipeline. Similar to [ComfyUI-Florence2](https://github.com/kijai/ComfyUI-Florence2/blob/main/nodes.py), RefHCM provides keypoint information for specified individuals and fine-grained human part segmentation results, which can be utilized for tasks like dance generation and image editing.  By the way, we are considering integrating RefHCM into ComfyUI to further expand its utility...
+RefHCM paves the way for advanced referring abilities in human-AI interactions. For current applications, it can simplify the AIGC content generation pipeline. 
+
+Similar to [ComfyUI-Florence2](https://github.com/kijai/ComfyUI-Florence2/blob/main/nodes.py), RefHCM provides addtional keypoint information for specified individuals and more fine-grained human part segmentation results, which can be utilized for tasks like dance generation and image editing.  By the way, we are also considering integrating RefHCM into ComfyUI to further expand its utility...
 
 ## Todo List
 
@@ -43,11 +45,11 @@ For environment setup issues, e.g. `fairseq` installation, refer to the manual s
 
 - Now you can try RefHCM:smile:, here are some examples.
 
-  <img src="C:\Users\Axuanz\Desktop\refhcm\examples\rec.png" alt="rec" style="zoom:20%;" /><img src="C:\Users\Axuanz\Desktop\refhcm\examples\rkpt.png" alt="rkpt" style="zoom: 20%;" />
+  <img src="examples\rhrc.png" alt="rhrc" style="zoom:20%;" />
 
-  <img src="C:\Users\Axuanz\Desktop\refhcm\examples\rpar.png" alt="rpar" style="zoom:33%;" />
+  <img src="examples\rkpt.png" alt="rkpt" style="zoom: 20%;" />
 
-  <img src="C:\Users\Axuanz\Desktop\refhcm\examples\rhrc.png" alt="rhrc" style="zoom:20%;" />
+  <img src="examples\rpar.png" alt="rpar" style="zoom:33%;" />
 
 ## Data Preparation and Pretrained Model
 
@@ -77,7 +79,7 @@ bash evaluate_rkpt.sh # evaluate
 
 ### Referring Parsing (RPar)
 
-`full_mask` means Query Parallel Generation (QPG) mentioned in the paper, which can speed up the generation speed while remains the performance.
+`full_mask` means Query Parallel Generation (QPG) mentioned in the paper, which can speed up the generation speed while retains most of the performance.
 
 ```bash
 cd run_script/rpar/
@@ -101,7 +103,7 @@ bash evaluate_rhrc.sh # evaluate
 ```bash
 cd run_script/multitask/
 bash train_multitask.sh # training, including multitask learning \
-						# and reasoning ablity boosting (RefHCM-tuned)
+		        # and reasoning ablity boosting (RefHCM-tuned)
 ```
 
 ## Acknowledgments
@@ -115,8 +117,8 @@ If you find this repository useful, please consider citing it:
 
 ```
 @misc{refhcm2024,
-  author = {Jie Huang},
-  title = {{RefHCM: A Unified Model for Human-Centric Perceptions}},
+  author = {JJJYmmm},
+  title = {{RefHCM: A Unified Model for Referring Perceptions in Human-Centric Scenarios}},
   year = {2024},
   publisher = {GitHub},
   journal = {GitHub repository},
