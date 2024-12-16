@@ -30,7 +30,7 @@ warnings.filterwarnings("ignore", "(Possibly )?corrupt EXIF data", UserWarning)
 IMAGENET_DEFAULT_MEAN = (0.485, 0.456, 0.406)
 IMAGENET_DEFAULT_STD = (0.229, 0.224, 0.225)
 
-root_anno_path = '../../dataset/rpar/anno' # your anno path
+root_anno_path = '../../dataset/rpar/annos' # your anno path
 
 # <code_0~31> for image code, <code_40> for parsing begin token, <code_41> for parsing end token, <code_42~48> for parsing queries
 PARSING_BEGIN_TOKEN = "<code_40>"
