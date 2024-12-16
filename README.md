@@ -43,7 +43,7 @@ For environment setup issues, e.g. `fairseq` installation, refer to the manual s
   CUDA_VISIBLE_DEVICES=0 python gradio_demo.py
   ```
 
-- Now you can try RefHCM:smile:, here are some examples.
+- Now you can try RefHCM 😊, here are some examples.
 
   <img src="examples\rhrc.png" alt="rhrc" style="zoom:20%;" />
 
