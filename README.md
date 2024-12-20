@@ -15,8 +15,8 @@ Similar to [ComfyUI-Florence2](https://github.com/kijai/ComfyUI-Florence2/blob/m
 ## Todo List
 
 - [x] Release the code before December 15, 2024
-- [ ] Release the data and model before January 1, 2025
-- [ ] Integrate RefHCM into ComfyUI (no specific deadline)
+- [x] Release the data and model before January 1, 2025
+- [ ] Integrate RefHCM into ComfyUI
 
 ## Requirements
 
