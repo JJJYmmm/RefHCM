@@ -1,5 +1,12 @@
 # RefHCM: A Unified Model for Referring Perceptions in Human-Centric Scenarios
 
+<h5 align="left">
+    
+[![hugging_face](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/JJJYmmm/RefHCM)
+[![arXiv](https://img.shields.io/badge/Arxiv-2412.14643-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2412.14643) <br>
+
+</h5>
+
 ## Overview
 
 Here is the official implementation of **RefHCM**, a unified model designed specifically for human-centric scenarios, enabling it to perform several referring perception tasks. 
