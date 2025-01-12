@@ -113,6 +113,55 @@ bash train_multitask.sh # training, including multitask learning \
 		        # and reasoning ablity boosting (RefHCM-tuned)
 ```
 
+## Results
+
+### Referring Expression Comprehension
+
+
+|     Model     | Size | Refcoco testA | Refcoco+ testA |
+| :-----------: | :--: | :-----------: | :------------: |
+|     PFOS      |  -   |     81.94     |     72.43      |
+|    UNITER     | 870M |     87.04     |     81.45      |
+| OFA-L-refcoco | 520M |     92.93     |     89.87      |
+|   UNINEXT-H   |  1B  |     94.33     |     89.63      |
+|    RefHCM     | 500M |   **93.69**   |     89.56      |
+
+### Referring Keypoint
+
+The performance results on the Refpose/+/g datasets, introduced in this paper, are presented below:
+
+| Model            | Size | Refpose             | Refpose+            | Refposeg        |
+| ---------------- | ---- | ------------------- | ------------------- | --------------- |
+| Unified-IO-2     | 1.1B | 89.13/52.00         | 82.35/48.25         | 89.94/54.01     |
+| $PoseGPT_{text}$ | 500M | 78.70/70.50         | 82.03/71.46         | 91.94/**76.77** |
+| RefHCM           | 500M | **93.69**/**75.60** | **89.56**/**72.24** | **93.42**/75.69 |
+
+For the RefHuman dataset(text branch), which was proposed in the [RefHuman](https://github.com/bo-miao/RefHuman), the zero-shot performance of RefHCM is listed below.
+
+| Model  | Size | OKS AP   |
+| ------ | ---- | -------- |
+| UniPHD | 184M | 66.7     |
+| RefHCM | 500M | **66.8** |
+
+### Referring Parsing (RPar)
+
+| Model        | Size | mIoU      |
+| ------------ | ---- | --------- |
+| Florence-2   | 770M | 6.29      |
+| Unified-IO-2 | 1.1B | 6.83      |
+| RefHCM       | 500M | **45.62** |
+
+### Referring Human-Related Caption (RHrc)
+
+
+
+| Model        | Size | CIDEr     |
+| ------------ | ---- | --------- |
+| Florence-2   | 770M | 0.11      |
+| Unified-IO-2 | 1.1B | 0.98      |
+| LLaVA-v1.5   | 7B   | 9.54      |
+| RefHCM       | 500M | **82.41** |
+
 ## Acknowledgments
 
 - [OFA](https://github.com/OFA-Sys/OFA) for their contribution with the training framework.
@@ -123,7 +172,7 @@ bash train_multitask.sh # training, including multitask learning \
 If you find this repository useful, please consider citing it:
 
 ```
-@misc{refhcm,
+@misc{refhcm24,
       title={RefHCM: A Unified Model for Referring Perceptions in Human-Centric Scenarios}, 
       author={Jie Huang and Ruibing Hou and Jiahe Zhao and Hong Chang and Shiguang Shan},
       year={2024},
