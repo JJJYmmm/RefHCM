@@ -123,13 +123,14 @@ bash train_multitask.sh # training, including multitask learning \
 If you find this repository useful, please consider citing it:
 
 ```
-@misc{refhcm2024,
-  author = {JJJYmmm},
-  title = {{RefHCM: A Unified Model for Referring Perceptions in Human-Centric Scenarios}},
-  year = {2024},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/JJJYmmm/RefHCM}},
+@misc{refhcm,
+      title={RefHCM: A Unified Model for Referring Perceptions in Human-Centric Scenarios}, 
+      author={Jie Huang and Ruibing Hou and Jiahe Zhao and Hong Chang and Shiguang Shan},
+      year={2024},
+      eprint={2412.14643},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.14643}, 
 }
 ```
 
