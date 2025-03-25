@@ -20,9 +20,9 @@ RefHCM paves the way for advanced referring abilities in human-AI interactions. 
 Similar to [ComfyUI-Florence2](https://github.com/kijai/ComfyUI-Florence2/blob/main/nodes.py), RefHCM provides addtional keypoint information for specified individuals and more fine-grained human part segmentation results, which can be utilized for tasks like dance generation and image editing.  By the way, we are also considering integrating RefHCM into ComfyUI to further expand its utility...
 
 ## Todo List
-
-- [x] Release the code before December 15, 2024
+- [x] Add S1-like sampling method to perform multiple tasks in one instruction! See `demo_s1.py`.
 - [x] Release the data and model before January 1, 2025
+- [x] Release the code before December 15, 2024
 - [ ] Integrate RefHCM into ComfyUI
 
 ## Requirements
